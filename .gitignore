@@ -1,0 +1,5 @@
+Solar/
+venv/
+env/
+*.dll
+__pycache__/
