@@ -19,7 +19,7 @@ A **machine learning-powered web application** for monitoring solar plant perfor
 
 ---
 
-## 📌 Problem Statement
+##  Problem Statement
 
 Solar plants often suffer from:
 
@@ -35,7 +35,7 @@ This project solves that by providing:
 
 ---
 
-## 🚀 Features
+##  Features
 
 *  **Performance Ratio (PR) Calculation**
 *  **ML-based Prediction System**
@@ -45,7 +45,7 @@ This project solves that by providing:
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 ```mermaid
 flowchart LR
@@ -159,7 +159,7 @@ Open 👉 [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Python**
 * **Pandas, NumPy**
