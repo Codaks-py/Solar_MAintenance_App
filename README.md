@@ -29,18 +29,18 @@ Solar plants often suffer from:
 
 This project solves that by providing:
 
-* 📊 Real-time monitoring
-* 🤖 Intelligent predictions
-* ⚠️ Early fault detection
+*  Real-time monitoring
+*  Intelligent predictions
+*  Early fault detection
 
 ---
 
 ## 🚀 Features
 
-* ✅ **Performance Ratio (PR) Calculation**
-* 🤖 **ML-based Prediction System**
-* ⚡ **Live User Input via Streamlit**
-* 📉 **Fault Classification (Normal / Warning / Fault)**
+*  **Performance Ratio (PR) Calculation**
+*  **ML-based Prediction System**
+*  **Live User Input via Streamlit**
+*  **Fault Classification (Normal / Warning / Fault)**
 
 
 ---
@@ -59,7 +59,7 @@ F --> G[Streamlit Dashboard]
 
 ---
 
-## 📊 Performance Ratio (PR)
+##  Performance Ratio (PR)
 
 The **Performance Ratio (PR)** is the core metric used in this project.
 
@@ -72,7 +72,7 @@ The **Performance Ratio (PR)** is the core metric used in this project.
 
 ---
 
-## 🤖 Models Used
+##  Models Used
 
 | Task              | Approach                         |
 | ----------------- | -------------------------------- |
@@ -103,7 +103,7 @@ The **Performance Ratio (PR)** is the core metric used in this project.
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ```bash
 # Clone repo
@@ -125,7 +125,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run Locally
+## Run Locally
 
 ```bash
 streamlit run streamlit_app.py
@@ -135,15 +135,15 @@ Open 👉 [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 📈 Key Results & Insights
+## Key Results & Insights
 
-* ⚠️ **Fault class recall initially low (0.0)** → highlights class imbalance challenge
-* 📊 Improved detection using **threshold-based classification**
-* 🔍 PR proved to be a **strong indicator of system health**
+* **Fault class recall initially low (0.0)** → highlights class imbalance challenge
+* Improved detection using **threshold-based classification**
+* PR proved to be a **strong indicator of system health**
 
 ---
 
-## 🧩 Challenges
+##  Challenges
 
 * Imbalanced dataset (fault cases rare)
 * Negative PR interpretation
@@ -151,11 +151,11 @@ Open 👉 [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 🔧 Future Improvements
+##  Future Improvements
 
-* 🚀 Improve fault detection recall
-* 📡 Integrate real-time IoT sensor data
-* 🔔 Add alert/notification system
+*  Improve fault detection recall
+*  Integrate real-time IoT sensor data
+* Add alert/notification system
 
 ---
 
@@ -175,7 +175,7 @@ Open 👉 [http://localhost:8501](http://localhost:8501)
 
 If you found this project useful:
 
-* ⭐ Star the repo
-* 🍴 Fork it
-* 🛠️ Contribute improvements
+* Star the repo
+* Fork it
+* Contribute improvements
 
