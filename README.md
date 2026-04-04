@@ -1,4 +1,4 @@
-Here’s a **GitHub-optimized README.md** — cleaner, more attractive, and designed to impress recruiters and visitors 👇
+
 
 ---
 
