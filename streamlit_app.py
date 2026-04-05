@@ -42,7 +42,7 @@ fault_threshold =  0.4
 
 def final_status(prob, drop):
     
-        if prob > normal_threshold and drop < normal_threshold:
+        if prob > normal_threshold and drop < fault_threshold:
             return 'Normal'
         elif drop > fault_threshold:
             return 'Fault'
@@ -65,9 +65,9 @@ if st.button("Make Prediction"):
     reg_pred = reg_model.predict(data)[0]
     cls_pred = class_model.predict_proba(data)[0][0]
 
-    irr = IRRADIATION + 0.000001
+    #irr = IRRADIATION + 0.000001
 
-    PERFORMANCE_RATIO = abs(AC_POWER / irr)
+    PERFORMANCE_RATIO = (AC_POWER / (IRRADIATION + 0.000001))
     PERFORMANCE_DROP = abs((PERFORMANCE_RATIO - reg_pred) / (reg_pred + 0.0000001))
     status = final_status(PERFORMANCE_DROP, cls_pred)
     
