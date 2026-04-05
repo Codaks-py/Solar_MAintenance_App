@@ -1,163 +1,181 @@
-# 🌞 Solar Maintenance App
 
-### ⚡ Machine Learning for Solar Fault Detection & Predictive Maintenance
-
-## 📌 Overview
-
-The **Solar Maintenance App** is an end-to-end machine learning system designed to monitor solar plant performance and detect faults early.
-
-It leverages **Performance Ratio (PR)** and classification models to transform raw solar data into **actionable insights**, enabling proactive maintenance and reducing system downtime.
-
-## 🧠 Key Highlights
-
-* ⚡ Real-world **solar performance monitoring system**
-* 🧠 ML-based **fault detection pipeline**
-* ⚖️ Handles **imbalanced datasets effectively**
-* 🎯 Focus on **fault recall (critical in production systems)**
-* 📊 Interactive **Streamlit dashboard**
-
-## 🚀 Features
-
-* 📊 Performance Ratio (PR) computation
-* ⚠️ Binary classification:
-
-  * Normal
-  * Abnormal
-* 🔍 Abnormal classification:
-
-  * Warning
-  * Fault
-* 🧠 XGBOOST for imbalance
-* 📉 Threshold-based decision logic
-* 📊 Visual monitoring dashboard
-
-### Pipeline:
-
-1. **Data Collection** → Solar operational data
-2. **Preprocessing** → Cleaning & feature engineering
-3. **PR Calculation** → Efficiency metric
-4. **Model Training** → Binary classification
-5. **Post-processing** → Warning vs Fault
-6. **Visualization** → Dashboard insights
 
 ---
 
-## 📂 Project Structure
+# ☀️ Solar Predictive Maintenance System
 
-```bash
-Solar_MAintenance_App/
-│
-├── Plant_1_Generation_Data.csv      # Raw solar power generation data
-├── Plant_1_Weather_Sensor_Data.csv  # Weather sensor readings (irradiance, temperature, etc.)
-├── final_solar_dataset.csv          # Cleaned and merged dataset used for modeling
-│
-├── check_data.ipynb                 # Data exploration, cleaning, and preprocessing notebook
-├── train_model.ipynb                # Model training, evaluation, and experimentation
-│
-├── streamlit_app.py                 # Streamlit dashboard for visualization & predictions
-├── requirements.txt                 # Project dependencies
-│
-└── README.md                        # Project documentation
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![Machine Learning](https://img.shields.io/badge/ML-Enabled-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+A **machine learning-powered web application** for monitoring solar plant performance and detecting faults using real-time and historical data.
+
+---
+
+## 🔗 Live Demo
+
+👉 (http://localhost:8501)
+
+---
+
+##  Problem Statement
+
+Solar plants often suffer from:
+
+* Hidden performance drops
+* Late fault detection
+* Inefficient monitoring systems
+
+This project solves that by providing:
+
+*  Real-time monitoring
+*  Intelligent predictions
+*  Early fault detection
+
+---
+
+##  Features
+
+*  **Performance Ratio (PR) Calculation**
+*  **ML-based Prediction System**
+*  **Live User Input via Streamlit**
+*  **Fault Classification (Normal / Warning / Fault)**
+
+
+---
+
+## How It Works
+
+```mermaid
+flowchart LR
+A[Raw Data] --> B[Data Cleaning]
+B --> C[Feature Engineering]
+C --> D[PR Calculation]
+D --> E[Model Training]
+E --> F[Prediction]
+F --> G[Streamlit Dashboard]
 ```
 
 ---
 
-## ⚙️ Methodology
+##  Performance Ratio (PR)
 
-### 📊 Performance Ratio (PR)
+The **Performance Ratio (PR)** is the core metric used in this project.
 
-Core metric used to evaluate solar efficiency.
+* Range: **-1 to 0.3**
+* Interpretation:
 
----
-
-### 🧠 Modeling Approach
-
-* Binary classification:
-
-  * Normal vs Abnormal
-* Abnormal split into:
-
-  * Warning
-  * Fault
+  * **Normal** → High PR
+  * **Warning** → Moderate drop
+  * **Fault** → Low / Negative PR
 
 ---
 
-### ⚖️ Handling Imbalanced Data
+##  Models Used
 
-* Implemented **XGBOOST**
-* Improved learning on minority (Abnormal) class
-
----
-
-### 📈 Evaluation Metrics
-
-* Precision
-* Recall
-* F1-score
-* 🚨 Focus: **Abnormal Recall (most critical metric)**
+| Task              | Approach                         |
+| ----------------- | -------------------------------- |
+| PR Prediction     | Regression Model                 |
+| Fault Detection   | Threshold / Classification Model |
 
 ---
 
-## 🛠️ Tech Stack
+## 🗂️ Project Structure
 
-* **Python**
-* **Scikit-learn**
-* **Imbalanced-learn**
-* **Pandas / NumPy**
-* **Streamlit**
-
----
-
-## ▶️ Getting Started
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/Codaks-py/Solar_MAintenance_App.git
-cd Solar_MAintenance_App
+```
+📁 solar-predictive-maintenance
+│
+├── 📄 Plant_1_Generation_Data.csv
+├── 📄 Plant_1_Weather_Sensor_Data.csv
+├── 📄 final_solar_dataset.csv
+│
+├── 📓 check_data.ipynb
+├── 📓 train_model.ipynb
+│
+├── 🌐 streamlit_app.py
+├── 🧠 model.pkl
+├── ⚙️ scaler.pkl
+│
+├── 📦 requirements.txt
+└── 📘 README.md
 ```
 
-### 2. Setup Environment
+---
+
+##  Installation
 
 ```bash
+# Clone repo
+git clone https://github.com/your-username/solar-predictive-maintenance.git
+
+# Enter directory
+cd solar-predictive-maintenance
+
+# Create virtual environment
 python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-```
 
-### 3. Install Dependencies
+# Activate environment
+# Windows
+venv\Scripts\activate
 
-```bash
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-### 4. Run Model
+---
+
+## Run Locally
 
 ```bash
-python src/train_model.py
+streamlit run streamlit_app.py
 ```
 
-### 5. Launch Dashboard
-
-```bash
-streamlit run dashboard/streamlit_app.py
-```
-
-## 📊 Use Cases
-
-* 🌞 Solar farm monitoring
-* ⚙️ Predictive maintenance
-* 📉 Performance degradation detection
-* ⚡ Energy optimization
-
-## 📈 What Makes This Project Stand Out
-
-* Real-world **energy + ML application**
-* Focus on **imbalanced classification (industry problem)**
-* Practical **threshold + ML hybrid approach**
-* Designed with **deployment & monitoring in mind**
+Open 👉 [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 🤝 Contributions
+## Key Results & Insights
 
-Contributions are welcome! Feel free to fork and improve the project.
+* **Fault class recall initially low (0.0)** → highlights class imbalance challenge
+* Improved detection using **threshold-based classification**
+* PR proved to be a **strong indicator of system health**
+
+---
+
+##  Challenges
+
+* Imbalanced dataset (fault cases rare)
+* Negative PR interpretation
+* Multi-class classification complexity
+
+---
+
+##  Future Improvements
+
+*  Improve fault detection recall
+*  Integrate real-time IoT sensor data
+* Add alert/notification system
+
+---
+
+##  Tech Stack
+
+* **Python**
+* **Pandas, NumPy**
+* **Scikit-learn**
+* **Streamlit**
+* **Matplotlib / Seaborn**
+
+---
+
+---
+
+## ⭐ Contribute / Support
+
+If you found this project useful:
+
+* Star the repo
+* Fork it
+* Contribute improvements
+
