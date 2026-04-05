@@ -15,7 +15,7 @@ A **machine learning-powered web application** for monitoring solar plant perfor
 
 ## 🔗 Live Demo
 
-👉 *Add your deployed link here ([Streamlit Cloud / Render](http://localhost:8501/))*
+👉 (http://localhost:8501)
 
 ---
 
