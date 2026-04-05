@@ -15,7 +15,7 @@ A **machine learning-powered web application** for monitoring solar plant perfor
 
 ## 🔗 Live Demo
 
-👉 (http://localhost:8501)
+👉 https://solarmaintenanceapp.streamlit.app/
 
 ---
 
