@@ -42,7 +42,7 @@ fault_threshold =  0.4
 
 def final_status(drop, prob):
     
-        if drop > normal_threshold and prob < fault_threshold:
+        if drop >= normal_threshold and prob < fault_threshold:
             return 'Normal'
         elif prob > fault_threshold:
             return 'Fault'
